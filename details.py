@@ -11,7 +11,7 @@ from tkinter import messagebox
 root=Tk()
 
 #Creating connection with the MYSQL database
-mydb = mysql.connector.connect(host="localhost",user="root",passwd="AdityaRP23",database="practice")
+mydb = mysql.connector.connect(host="",user="",passwd="",database="")
 cursor = mydb.cursor()
 
 name=input("enter name")
