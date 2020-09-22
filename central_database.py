@@ -45,8 +45,8 @@ def verify():
     print(year)
     print(sub)
     print(date)
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23",
-                                   database="practice")
+    mydb = mysql.connector.connect(host="", user="", passwd="",
+                                   database="")
     mycursor = mydb.cursor()
     sql = "SELECT * FROM Central_database WHERE class=%s AND date=%s AND sub=%s;"
     """
