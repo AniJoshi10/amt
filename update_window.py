@@ -54,7 +54,7 @@ def insert():
     new=new_pass_box.get()
     confirm=conf_pass_box.get()
 
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+    mydb = mysql.connector.connect(host="", user="", passwd="", database="")
     mycursor = mydb.cursor()
     sql = "SELECT pass FROM passwords WHERE id=%(id)s;"
 
