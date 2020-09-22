@@ -17,7 +17,7 @@ root = Tk()
 # stting title for the window
 root.title("Admin Verification")
 #root.configure(bg='gray')
-admin_id="Admin"
+admin_id=""
 
 #elements for the dropdownbox
 clicked=StringVar()
@@ -38,7 +38,7 @@ def verify():
     id1=name_box.get()
     pass1=roll_no_box.get()
     option=clicked.get()
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+    mydb = mysql.connector.connect(host="", user="", passwd="", database="")
     mycursor = mydb.cursor()
     sql = "SELECT pass FROM passwords WHERE id=%(id)s;"
 
@@ -72,7 +72,7 @@ name_label = Label(root, text="Admin ID",font=("Candara",12,"bold"),fg="#00008B"
 name_label.grid(row=1,column=0,padx=10,pady=10)
 
 #creating a label for Password
-roll_no_label=Label(root,text="Passward",font=("Candara",12,"bold"),fg="#00008B")
+roll_no_label=Label(root,text="Password",font=("Candara",12,"bold"),fg="#00008B")
 roll_no_label.grid(row=2,column=0,padx=10,pady=10)
 
 #Entry Field for id
