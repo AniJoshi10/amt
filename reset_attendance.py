@@ -39,7 +39,7 @@ def verify():
     year=clicked.get()
     if year=="Final":
         # Creating connection with the MYSQL database
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         cursor = mydb.cursor()
 
         # Taking date from device
@@ -52,7 +52,7 @@ def verify():
         messagebox.showinfo("Success","Final year database is reseted.")
     elif year=="Third":
         # Creating connection with the MYSQL database
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         cursor = mydb.cursor()
 
         # Taking date from device
@@ -65,7 +65,7 @@ def verify():
         messagebox.showinfo("Success","Third year database is reseted.")
     else:
         # Creating connection with the MYSQL database
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         cursor = mydb.cursor()
 
         # Taking date from device
