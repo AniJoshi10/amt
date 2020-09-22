@@ -32,7 +32,7 @@ def get_random_alphanumeric_string(length):
 
 def verify():
     fac_id=Unique_Identification_box.get()
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+    mydb = mysql.connector.connect(host="", user="", passwd="", database="")
     mycursor = mydb.cursor()
     sql = "SELECT email FROM passwords WHERE id=%(id)s;"
     mydata = {
@@ -59,11 +59,11 @@ def verify():
 
         port = 587
         smtp_server = "smtp.gmail.com"
-        sender_email = "rppundkar@gmail.com"
+        sender_email = ""
         receiver_email = recod[0]
         password = input("Type your password and press enter:")
         message = """\
-        Joshi Buwa
+        
 
         Hi. Your temporory password is: """
         msg1=message+random_str
