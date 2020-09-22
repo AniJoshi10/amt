@@ -55,7 +55,7 @@ def insert():
 
     if year=="Final":
         # Creating connection with the MYSQL database of Final Year
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         cursor = mydb.cursor()
 
         sql = "INSERT INTO Attendance(name,roll_no,class,stats,date) VALUES(%s,%s,%s,%s,%s)"
@@ -66,7 +66,7 @@ def insert():
         messagebox.showinfo("Success", "Student is successfull enroled!")
     elif year=="Third":
         # Creating connection with the MYSQL database of third Year
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         cursor = mydb.cursor()
 
         sql = "INSERT INTO Attendance_third(name,roll_no,class,stats,date) VALUES(%s,%s,%s,%s,%s)"
@@ -77,7 +77,7 @@ def insert():
         messagebox.showinfo("Success", "Student is successfull enroled!")
     else:
         # Creating connection with the MYSQL database of second Year
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         cursor = mydb.cursor()
 
         sql = "INSERT INTO Attendance_second(name,roll_no,class,stats,date) VALUES(%s,%s,%s,%s,%s)"
