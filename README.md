@@ -1,2 +1,1 @@
-# Attendance Management Tool
-# Using Face Recognition
+# Attendance Management Tool Using Face Recognition
