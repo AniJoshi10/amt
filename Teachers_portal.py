@@ -39,7 +39,7 @@ def clear_input():
 
 #Defing function for verifyng details
 def verify():
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+    mydb = mysql.connector.connect(host="", user="", passwd="", database="")
     mycursor = mydb.cursor()
     username=id_box.get()
     password=passwd_box.get()
