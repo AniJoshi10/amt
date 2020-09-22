@@ -29,7 +29,7 @@ options={
 def verify():
     year=clicked.get()
     if year=="Final":
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         mycursor = mydb.cursor()
         face_recognizer = cv2.face.LBPHFaceRecognizer_create()
         face_recognizer.read('trainer_final/trainer.yml')
@@ -90,7 +90,7 @@ def verify():
         cam.release()
         cv2.destroyAllWindows()
     elif year=="Third":
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         mycursor = mydb.cursor()
         face_recognizer = cv2.face.LBPHFaceRecognizer_create()
         face_recognizer.read('trainer_third/trainer.yml')
@@ -152,7 +152,7 @@ def verify():
         cam.release()
         cv2.destroyAllWindows()
     else:
-        mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+        mydb = mysql.connector.connect(host="", user="", passwd="", database="")
         mycursor = mydb.cursor()
         face_recognizer = cv2.face.LBPHFaceRecognizer_create()
         face_recognizer.read('trainer_second/trainer.yml')
