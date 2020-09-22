@@ -38,7 +38,7 @@ def clear_input():
 
 #Defining function for Database operation
 def verify():
-    mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+    mydb = mysql.connector.connect(host="", user="", passwd="", database="")
     mycursor = mydb.cursor()
     username = name_box.get()
     password = roll_no_box.get()
@@ -55,12 +55,12 @@ def verify():
         booleanval = bcrypt.hashpw(password.encode(), recod[0].encode())
         if booleanval == recod[0].encode():
             if year == "Final":
-                mydb1 = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+                mydb1 = mysql.connector.connect(host="", user="", passwd="", database="")
                 cursor1 = mydb1.cursor()
 
 
-                mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23",
-                                               database="practice")
+                mydb = mysql.connector.connect(host="", user="", passwd="",
+                                               database="")
                 mycursor = mydb.cursor()
                 sql = "SELECT * FROM Attendance"
                 mycursor.execute(sql, mydata)
@@ -93,11 +93,11 @@ def verify():
 
                 messagebox.showinfo("Success", "Successfully exported to csv file.")
             elif year == "Third":
-                mydb1 = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+                mydb1 = mysql.connector.connect(host="", user="", passwd="", database="")
                 cursor1 = mydb1.cursor()
 
-                mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23",
-                                               database="practice")
+                mydb = mysql.connector.connect(host="", user="", passwd="",
+                                               database="")
                 mycursor = mydb.cursor()
                 sql = "SELECT * FROM Attendance_third"
                 mycursor.execute(sql, mydata)
@@ -129,11 +129,11 @@ def verify():
 
                 messagebox.showinfo("Success", "Successfully exported to csv file.")
             else:
-                mydb1 = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+                mydb1 = mysql.connector.connect(host="", user="", passwd="", database="")
                 cursor1 = mydb1.cursor()
 
-                mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23",
-                                               database="practice")
+                mydb = mysql.connector.connect(host="", user="", passwd="",
+                                               database="")
                 mycursor = mydb.cursor()
                 sql = "SELECT * FROM Attendance_second"
                 mycursor.execute(sql, mydata)
