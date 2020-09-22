@@ -69,7 +69,7 @@ def verify():
         year_of_student = clicked.get()
         # Updating the database
         if year_of_student=="Final":
-            mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+            mydb = mysql.connector.connect(host="", user="", passwd="", database="")
             mycursor = mydb.cursor()
 
             sql = "UPDATE Attendance SET stats='Present' WHERE roll_no=%(rollno)s;"
@@ -80,7 +80,7 @@ def verify():
             mydb.commit()
             messagebox.showinfo("Success", "Updation Successfull")
         elif year_of_student=="Third":
-            mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+            mydb = mysql.connector.connect(host="", user="", passwd="", database="")
             mycursor = mydb.cursor()
 
             sql = "UPDATE Attendance_third SET stats='Present' WHERE roll_no=%(rollno)s;"
@@ -91,7 +91,7 @@ def verify():
             mydb.commit()
             messagebox.showinfo("Success", "Updation Successfull")
         else:
-            mydb = mysql.connector.connect(host="localhost", user="root", passwd="AdityaRP23", database="practice")
+            mydb = mysql.connector.connect(host="", user="", passwd="", database="")
             mycursor = mydb.cursor()
 
             sql = "UPDATE Attendance_second SET stats='Present' WHERE roll_no=%(rollno)s;"
